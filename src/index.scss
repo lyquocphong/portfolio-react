@@ -1,0 +1,23 @@
+$primary-color: #61892F;
+$secondary-color: #86C232;
+$third-color: #222629;
+$fourth-color: #474B4F;
+$fifth-color: #6B6E70;
+
+$menu-background: $primary-color;
+$terminal-background: $fourth-color;
+
+@keyframes heading {
+    0% {top: -100% }
+    100% {top: 0 }
+}
+
+@keyframes branding {
+    0% {left: -100%}
+    100% {left: 0}
+}
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import './asset/css/reset.css';
+@import './asset/css/mobile.scss';
+@import './asset/css/animate.css';

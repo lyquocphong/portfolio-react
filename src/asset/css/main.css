@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('./reset.css');
+@import url('./animate.css');
+
+#landing-terminal-menu {
+    height: 48px;
+    width: 100%;
+    background: #61892F;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 10;
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#landing-terminal-menu .icofont-terminal{
+    font-size: 34px;
+    margin-left: 5px;
+    color: white;
+}
+
+.landing-terminal-menu-button-container{
+    display: flex;
+    align-items: center;
+}
+
+.landing-terminal-menu-button{
+    height: 10vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#landing-terminal-console {
+    height: calc(100vh - 48px);
+    background: #363636;
+    color: white;
+    display: relative;
+}
+
+#landing-terminal-console .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: -14%;
+    position: relative;
+}
+
+#landing-terminal-console #header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: header 2s forwards;
+    z-index: 9;
+}
+
+#landing-terminal-console #header img {
+    width: 80%;
+}
+
+#landing-terminal-console #header h1{
+    /* position: absolute;
+    animation: heading 2s forwards;
+    font-size: 5vw;
+    margin: auto;
+    display: inline-block; */
+}
+
+#landing-terminal-console #content {
+    /* height: 30vh; */
+    position: relative;
+    animation: content 2s forwards;
+    font-size: 24px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#landing-terminal-console #content .content-highlight{
+    color: #86C232;
+}
+
+#landing-terminal-console #button-container {
+    height: 50px;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+#landing-terminal-console #button-container img {
+    opacity: 1;
+    height: 70%;   
+}
+
+@keyframes header {
+    0% {top: -100% }
+    100% {top: 0 }
+}
+
+@keyframes content {
+    0% {left: -100%}
+    100% {left: 0}
+}
+
+#landing-terminal-console-text{
+    font-size: 6.8vh;
+}
+
+@keyframes opacity {
+    0% {opacity: 0;}
+    50% {opacity: 0.4;}
+    100% {opacity: 0.9;}
+}
+
+#more-button{
+    cursor: pointer;
+    word-spacing: 0.15em;
+}
