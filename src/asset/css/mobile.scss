@@ -1,4 +1,5 @@
 $mobile-menu-height: 48px;
+$avarta-wrapper-heigth: 345px;
 
 .landing-section {
 
@@ -159,7 +160,7 @@ $mobile-menu-height: 48px;
             width: 100%;
             background: silver;
             position: relative;
-            height: 240px;
+            height: calc(100vh - #{($mobile-menu-height+$avarta-wrapper-heigth)};
 
             .main-wrapper {
                 position: absolute;
